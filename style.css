@@ -49,11 +49,12 @@ nav ul li {
 	border-radius: 12px;
 	padding: 34px;
 	background-image: url("bg.jpg");
+	overflow: hidden;
 }
 
 .bottom {
 	position: sticky;
-	height: 130px;
+	height: 100px;
 	background-color: black;
 	color: white;
 	bottom: 0;
@@ -85,7 +86,6 @@ nav ul li {
 	height: 50px;
 	display: flex;
 	background-color: white;
-
 	color: black;
 	margin: 12px auto;
 	justify-content: space-between;
@@ -111,6 +111,18 @@ nav ul li {
 	position: absolute;
 	left: 10vw;
 	font-family: "Varela Round", sans-serif;
+}
+
+@media only screen and (max-width: 1100px) {
+	.songInfo {
+		bottom: 2vw;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.icons {
+		margin-bottom: 35px;
+	}
 }
 
 .songInfo img {
