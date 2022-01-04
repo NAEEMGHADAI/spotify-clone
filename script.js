@@ -72,7 +72,10 @@ let songs = [
 
 songItems.forEach((song, i) => {
 	song.getElementsByTagName("img")[0].src = songs[i].coverPath;
-	song.getElementsByTagName("span")[0].innerText = songs[i].songName;
+	song.getElementsByTagName("span")[0].innerText = songs[i].songName.slice(
+		0,
+		9
+	);
 	song.getElementsByClassName("songLength")[0].innerText = songs[i].songLength;
 });
 
